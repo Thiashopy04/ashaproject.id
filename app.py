@@ -69,6 +69,3 @@ def order(product_id):
     # Create WhatsApp URL
     whatsapp_url = f"https://wa.me/{whatsapp_number}?text={message}"
     return redirect(whatsapp_url)
-
-if __name__ == '__main__':
-    app.run()
