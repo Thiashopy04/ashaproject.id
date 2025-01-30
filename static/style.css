@@ -1,162 +1,159 @@
-/* static/style.css */
 * {
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
-    font-family: Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 }
 
 /* Navigation */
 nav {
-    display: flex !important;
-    padding: 2% 6% !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    background: white !important;
-    position: fixed !important;
-    width: 100% !important;
-    top: 0 !important;
-    z-index: 1000 !important;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .nav-brand img {
-    width: 60px !important;
+    width: 60px;
 }
 
 .nav-links {
-    flex: 1 !important;
-    text-align: right !important;
+    flex: 1;
+    text-align: right;
 }
 
 .nav-links ul li {
-    list-style: none !important;
-    display: inline-block !important;
-    padding: 8px 12px !important;
-    position: relative !important;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
 }
 
 .nav-links ul li a {
-    color: black !important;
-    text-decoration: none !important;
-    font-size: 16px !important;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .nav-links ul li::after {
-    content: '' !important;
-    width: 0% !important;
-    height: 2px !important;
-    background: #4ba5ff !important;
-    display: block !important;
-    margin: auto !important;
-    transition: 0.5s !important;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #4ba5ff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
 
 .nav-links ul li:hover::after {
-    width: 100% !important;
+    width: 100%;
 }
 
 nav .fas {
-    display: none !important;
+    display: none;
 }
 
 /* Hero Section */
 .hero {
-    min-height: 100vh !important;
-    width: 100% !important;
-    padding-top: 100px !important;
-    text-align: center !important;
-    background: #f5f5f5 !important;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+    background: #f5f5f5;
 }
 
 .hero-content {
-    padding: 70px 20px !important;
+    padding: 70px 20px;
 }
 
 .hero-content h1 {
-    font-size: 3em !important;
-    margin-bottom: 20px !important;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
 .hero-content img {
-    max-width: 35% !important;
-    margin-top: 30px !important;
+    max-width: 35%;
+    margin-top: 30px;
 }
 
 /* Products Section */
 .products {
-    padding: 50px 20px !important;
-    text-align: center !important;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .products-container {
-    display: flex !important;
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-    gap: 30px !important;
-    margin-top: 30px !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .product-card {
-    width: 300px !important;
-    padding: 20px !important;
-    border-radius: 10px !important;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1) !important;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 .product-card img {
-    width: 100% !important;
-    border-radius: 5px !important;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .product-card .price {
-    color: #2874c2 !important;
-    font-weight: bold !important;
-    margin: 10px 0 !important;
+    color: #2874c2;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
 .btn {
-    display: inline-block !important;
-    text-decoration: none !important;
-    color: white !important;
-    border: 1px solid #2874c2 !important;
-    padding: 12px 34px !important;
-    background: #2874c2 !important;
-    position: relative !important;
-    cursor: pointer !important;
-    border-radius: 5px !important;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #2874c2;
+    padding: 12px 34px;
+    background: #2874c2;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .btn:hover {
-    background: #ff5c4d !important;
+    background: #ff5c4d;
 }
 
-/*About Section*/
+/* About Section */
 .about {
-    padding: 50px 20px !important;
-    text-align: center !important;
-    font: 1em sans-serif !important;
+    padding: 50px 20px;
+    text-align: center;
+    font: 1em sans-serif;
 }
-
-
 
 /* Team Section */
 .team {
-    padding: 50px 20px !important;
-    text-align: center !important;
-    background: #f5f5f5 !important;
+    padding: 50px 20px;
+    text-align: center;
+    background: #f5f5f5;
 }
 
 .team-container {
-    display: flex !important;
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-    gap: 30px !important;
-    margin-top: 30px !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .team-card {
@@ -165,87 +162,87 @@ nav .fas {
 }
 
 .team-card img {
-    width: 150px !important;
-    height: 150px !important;
-    border-radius: 50% !important;
-    margin-bottom: 15px !important;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 /* Testimonial Section */
 .testimonial {
-    padding: 50px 20px !important;
-    text-align: center !important;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .testimonial-container {
-    display: flex !important;
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-    gap: 30px !important;
-    margin-top: 30px !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .testimonial-card {
-    width: 300px !important;
-    padding: 20px !important;
-    border-radius: 10px !important;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1) !important;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 /* Contact Section */
 .contact {
-    padding: 50px 20px !important;
-    text-align: center !important;
-    background: #f5f5f5 !important;
+    padding: 50px 20px;
+    text-align: center;
+    background: #f5f5f5;
 }
 
 .contact-info {
-    margin-top: 30px !important;
+    margin-top: 30px;
 }
 
 .contact-info p {
-    margin: 10px 0 !important;
+    margin: 10px 0;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px !important;
-    background: #2874c2 !important;
-    color: white !important;
+    padding: 20px;
+    background: #2874c2;
+    color: white;
 }
 
 /* Responsive Design */
 @media(max-width: 700px) {
     .nav-links ul li {
-        display: block !important;
+        display: block;
     }
     
     .nav-links {
-        position: fixed !important;
-        background: #f44336 !important;
-        height: 100vh !important;
-        width: 200px !important;
-        top: 0 !important;
-        right: -200px !important;
-        text-align: left !important;
-        z-index: 2 !important;
-        transition: 1s !important;
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
     }
     
     .nav-links ul {
-        padding: 30px !important;
+        padding: 30px;
     }
     
     .nav-links ul li a {
-        color: white !important;
+        color: white;
     }
     
     nav .fas {
-        display: block !important;
-        color: #000 !important;
-        margin: 10px !important;
-        font-size: 22px !important;
-        cursor: pointer !important;
+        display: block;
+        color: #000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
     }
 }
