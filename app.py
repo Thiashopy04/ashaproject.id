@@ -1,8 +1,15 @@
 # app.py
-from flask import Flask, render_template, redirect, url_for
-import webbrowser
+from flask import Flask, render_template, redirect, url_for, send_from_directory
+import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
+
+# Tambahkan route khusus untuk static files
+@app.route('/static/<path:filename>')
+def static_files(filename):
+    return send_from_directory(app.static_folder, filename)
+
+# ... rest of your routes ...
 
 # Product data
 products = [
